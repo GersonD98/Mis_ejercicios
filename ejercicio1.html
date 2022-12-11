@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <script>
+        // 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+        // function miFuncion() {
+        //     let x="Hola Mundo123";
+        //     console.log(x.length);
+        
+        // }
+        // miFuncion();
+   // Este es mi objeto
+   const gerson = {
+            nombre: "Gerson",
+            apellido: "Matos"
+        };
+
+        function contarCaracteres(dato = null) {
+            
+            let tipoDeDato = new String("");
+
+            if (!!dato) {
+                
+                tipoDeDato = typeof(dato);
+
+                if (tipoDeDato === "string") {
+                    
+                    console.log(`Es un texto que tiene ${dato.length} letras.`);
+                }
+
+                if (tipoDeDato === "number") {
+                    
+                    console.log(`Es el número ${dato}.`);
+                }
+
+                if (tipoDeDato === "boolean") {
+                    
+                    console.log(`Es un booleano: ${dato}.`);
+                }
+
+                if (tipoDeDato === "object") {
+                    
+                    if (Array.isArray(dato)){
+
+                        console.log("Es un objeto de tipo array.");
+                        console.log("Sus valores son los siguientes:");
+                        console.log(dato);
+                        console.log(`Este array tiene ${dato.length} elementos.`);
+
+                    } else {
+
+                        console.log("Es un objeto.");
+                        console.log("Sus atributos y valores son los siguientes:");
+                        console.log(dato);
+                        console.log(`Este objeto tiene ${Object.keys(dato).length} elementos.`);
+                    }
+                }
+        
+            } else {
+                
+                console.log("No se ha ingresado ningún dato.");
+            }
+        }
+
+        contarCaracteres([gerson]);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Ejercicio4</h1>
+<body>
+    <script>
+/*Primera forma de hacerlo*/
+// let queso = 'hola mundo '
+// function miFuncion(){
+//     console.log(queso.repeat(3));
+// }
+// miFuncion();
+/*Segunda forma de hacerlo*/
+// function suFuncion(mantequilla){
+//     console.log(mantequilla.repeat(3));
+// }
+// suFuncion(`hola mundo `);
+/*
+alert("Ejercicio 4");
+let cantidad = undefined;
+let cadena = prompt(`Ingrese un cadena: `);
+cantidad = prompt(`Cantidad de repeticiones: `);
+
+console.log(cadena);
+console.log(cantidad);
+// texto = ""; vacio inicializan como falso
+const devolver = (texto = "", repeticiones = "") => {
+  if (!texto) return console.log(`La cadena esta vacia`);
+  if (!repeticiones) return console.log(`No ingreso cantidad`);
+  if (repeticiones == 0)
+    return console.log(`Cantidad de repeticiones no puede ser 0`);
+  if (repeticiones < 0) return console.log(`La cantidad no puede ser negativa`);
+
+  for (let i = 0; i < repeticiones; i++) {
+    alert(`${i + 1}. ${texto}`);
+  }
+};
+devolver(cadena, cantidad);
+*/
+let cadena = prompt(`Ingrese un cadena: `);
+let cantidad = prompt(`Cantidad de repeticiones: `);
+ let ejercicioCuatro = (str, x)=> {
+        str+=" ";	
+        return str.repeat(x)}
+        console.log(ejercicioCuatro(cadena, cantidad));
+    </script>
+   
+</body>
+</html>

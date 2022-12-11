@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Ejercicio 3</h1>
+
+<body>
+    <script>
+        // 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+        // let palabreishon = 'Hola que tal';
+        // let magico = palabreishon.split(' ', 3);
+        // console.log(magico);
+        // alert("Ejercicio 3");
+        //     segunda Form
+        //     Datafunction suFuncion(palabraSecreta){
+        // console.log(palabraSecreta.split(" ", 3));
+        //}
+
+        suFuncion('Hola que tal');
+
+        let separador = undefined;
+        let cadena = "";
+        cadena = prompt(`Ingrese una cadena: `);
+        separador = prompt(`Ingrese un separador: `);
+
+        let magico = cadena.split(' ', separador);
+        console.log(magico);
+        if (cadena === "") {
+            alert(`La cadena esta vacia`);
+        } else if (!separador) {
+            alert(`El separador no se ingreso`);
+        } 
+    </script>
+</body>
+
+</html>
